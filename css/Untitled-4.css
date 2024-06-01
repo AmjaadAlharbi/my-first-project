@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+ 
+ }
+ 
+ body {
+    direction: rtl;
+   
+ 
+ } 
+ ul{
+    list-style: none;
+    
+    } 
+    a{
+     text-decoration:none ; 
+    
+    } 
+    .navbar {
+       display: flex;
+       height:10%;
+       background-color: #637a9f62;
+       align-items: center;
+       justify-content: space-between;
+       direction: ltr;
+       font-size: 25px;
+       }
+          /* اللوقو */
+          .navbar img {
+           width: 150px;
+           height: 150px;
+           margin-top: 20px;
+           margin-left: 30px;
+             }
+             .navbar ul{
+               display: flex;
+               margin-right: 100px;
+             }
+             
+             .navbar ul li a{
+               padding: 15px 25px;
+               color:#0d0e0f;
+               font-weight:arial ;
+             }
+             .navbar ul li a:hover{
+               border-bottom: 2px solid #80BCBD;
+             }
+             /* الخلفية  */
+             header{
+               
+               background:url('../img/pn.png');
+               background-size: cover;
+               background-repeat: no-repeat;
+              background-position:center; 
+             }
+              header{
+               height: 100vh;
+               
+             }
+ header::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.253);
+  }
+ 
+  header * {
+    z-index: 5;
+  } 
+ 
+ .box{
+    width: 600px;
+    height: 400px;
+    background: #c9d7dd5e;
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    padding: 20px;
+    padding-top: 30px;
+    margin: 20px;    
+    direction: rtl;     
+    position: relative;     
+ }
+ input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #ccc;
+        box-sizing: border-box;
+    }
+ 
+ 
+  /* تظليل الخلفيه */
+  .min-container{
+    direction: rtl;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 500px;
+    
+ } 
+ button {
+    background-color:#fff3cf;
+    color:black ;
+    padding: 15px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+    font-size: medium;
+ }
+ .cancelbtn {
+    padding: 15px 20px;
+    background-color: #80BCBD;
+ }
+ .cancelbtn,
+    .signupbtn {
+        float: right;
+        width: 50%;
+    }
+    .container{
+       padding: 16px;
+    }   
+    .clearfix::after {
+       content: "";
+       clear: both;
+       display: table;
+   }
+ 
+ @media screen and (max-width: 200px) {
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+ }
+ 

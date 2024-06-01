@@ -1,0 +1,125 @@
+*{
+      margin:0;  
+      padding:0;
+      box-sizing : border-box;}
+      body{
+        direction: rtl;
+      }
+      ul{
+        list-style: none;
+        
+        } 
+        a{
+         text-decoration:none ; 
+        
+        } 
+        /* الصفحة الرئيسيه ومن نحن */
+        /* التحكم في عرض الشريط */
+        .navbar {
+        display: flex;
+        height:10%;
+        background-color: #637a9f62;
+        align-items: center;
+        justify-content: space-between;
+        direction: ltr;
+        font-size: 25px;
+        }
+           /* اللوقو */
+           .navbar img {
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+            margin-left: 30px;
+              }
+              .navbar ul{
+                display: flex;
+                margin-right: 100px;
+              }
+              
+              .navbar ul li a{
+                padding: 15px 25px;
+                color:#0d0e0f;
+                font-weight:arial ;
+              }
+              .navbar ul li a:hover{
+                border-bottom: 2px solid #80BCBD;
+              }
+              /* الخلفية  */
+              header{
+                
+                background:url('../img/pn.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+               background-position:center; 
+              }
+               header{
+                height: 100vh;
+                
+              }
+              /* خلفية وتضليل الصورة */
+              header::before{
+                content: "";
+                position: absolute;
+                top:0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.253);
+              }
+              /* درجة وضوح الكلام */
+              header * {
+                z-index: 5;
+              } 
+              .box{
+                width: 600px;
+                height: 500px;
+                background: #c9d7dd5e;
+                backdrop-filter: blur(20px);
+                border-radius: 30px;
+                padding: 20px;
+                padding-top: 30px;
+                margin: 20px;
+                direction: rtl;
+               position: relative;}
+
+               input{
+                width: 50%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 2px solid #ccc;
+                box-sizing: border-box;}
+
+                button {
+                    /* background-color: rgb(168, 255, 168); */
+                    background-color: #fff3cf;
+                    color:black ;
+                    padding: 15px 20px;
+                    margin: 8px 0;
+                    cursor: pointer;
+                    width: 50%;
+                    font-size: medium;
+                }
+                .btn-green{
+                    background-color: #80BCBD;
+                    color:black ;
+                    padding: 15px 20px;
+                    margin: 8px 0;
+                    cursor: pointer;
+                    width: 50%;
+                    font-size: medium;
+                }
+                
+                @media screen and (max-width: 400px) {
+                    .box {
+                        width: 100%;
+                    }
+                }
+                
+            
+
+
+
+
+                
+            

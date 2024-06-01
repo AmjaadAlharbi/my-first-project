@@ -1,0 +1,188 @@
+*{
+      margin:0; 
+      padding:0;
+      box-sizing : border-box;}
+    
+      body{ 
+        font-family: "arial";}
+        /* يشيل النقاط من الجنب */
+        ul{
+          list-style: none;
+        }
+        a{
+          text-decoration:none ;
+        }
+        /* الصفحة الرئيسيه ومن نحن */
+        /* التحكم في عرض الشريط */
+        .navbar {
+          display: flex;
+          height:10%;
+          background-color: #637a9f62;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 25px;
+        }
+       
+      
+         /* اللوقو */
+         .navbar img {
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+            margin-left: 30px;
+          }
+      
+      .navbar ul{
+        display: flex;
+        margin-right: 100px;
+      }
+      .navbar ul li a{
+        padding: 15px 25px;
+        color:#0d0e0f;
+        font-weight:arial ;
+      }
+      .navbar ul li a:hover{
+        border-bottom: 2px solid #80BCBD;
+      }
+      /* الخلفية  */
+      header{
+       
+        background:url('../img/pn.png');
+         background-size: cover;
+         background-repeat: no-repeat;
+        background-position:center; 
+
+      }
+      header{
+        height: 100vh;
+        
+      }
+      h2{
+        margin-right: 100px;
+        /* font-size: 40px; */
+        direction: rtl;
+            }
+      .container{
+        display: flex;
+        margin-top:50px ;
+        align-items: center;
+        justify-content: center;
+      }
+       .card{
+        height: 300px;
+        width: 300px;
+        background: #c9d7dd5e;
+        border-radius:30px ;
+        padding: 20px;
+        padding-top: 50px;
+        margin: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+       overflow: hidden;
+       position: relative;}
+       
+       .card a{
+        font-size: 35px;
+        padding: 20px 0;
+        color: #637a9f;
+       }
+      
+       .card h3{
+        font-size: 25px;
+        padding: 20px 0;
+        color:#426091;
+       
+
+
+       }
+       .card button{
+        outline: none;
+        border: none;
+        background: #80BCBD;
+        color: #333;
+        height: 35px;
+        width: 140px;
+        margin-top:40px ;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 50px;
+       }
+       .card button :hover{
+        letter-spacing: 2px;
+        opacity: .8;
+       }
+       /* التظليل حق المربع */
+       .card::before{
+        content: '';
+        position: absolute;
+        top:0;left:0;
+        height: 100%;
+        width: 50%;
+        background: rgba(160, 160, 160, 0.1);
+        z-index: -1;
+       }
+       .card::after{
+        content: '';
+        position: absolute;
+        top:0;right:0;
+        height: 100%;
+        width: 100%;
+        background: #ece63552;
+        z-index: -2;
+        clip-path: circle(20% at 90% 10%);
+        transition: .2s;
+       }
+       .card:hover::after{
+        clip-path:circle(100%) ;
+       }
+  
+       .card :hover h3{
+        color :#fff;
+       }
+       .card :hover p{
+        color :#f0f0f0;
+       }
+       .card :hover button{
+        color :#333;
+        background:#fff ;
+       }
+       header::before{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.253);
+      }
+      /* درجة وضوح الكلام */
+      header *{
+        z-index: 5;
+      }
+      input{
+        height: 40px;
+        border: 2px solid rgb(153,157,158);
+        border-radius: 7px;
+        margin: 5px 0;
+        
+      }
+    /* p{
+margin-right: 100px;
+    } */
+    @media screen  and (max-width:400px){
+        .navbar {
+          flex-basis:100% ;
+        }
+        
+        header{
+          flex-basis: 100px;
+        }
+
+        .card{
+          flex-basis: 100%;
+        } 
+        .card button{
+            flex-basis: 100%;
+        }
+        
+      }

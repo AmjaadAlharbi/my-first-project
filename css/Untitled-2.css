@@ -1,0 +1,176 @@
+
+ *{
+      margin:0;  
+      padding:0;
+      box-sizing : border-box;}
+      body{
+        direction: rtl;
+      }
+      ul{
+        list-style: none;
+        
+        } 
+        a{
+         text-decoration:none ; 
+        
+        } 
+        /* الصفحة الرئيسيه ومن نحن */
+        /* التحكم في عرض الشريط */
+        .navbar {
+        display: flex;
+        height:10%;
+        background-color: #637a9f62;
+        align-items: center;
+        justify-content: space-between;
+        direction: ltr;
+        font-size: 25px;
+        }
+           /* اللوقو */
+           .navbar img {
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+            margin-left: 30px;
+              }
+              .navbar ul{
+                display: flex;
+                margin-right: 100px;
+              }
+              
+              .navbar ul li a{
+                padding: 15px 25px;
+                color:#0d0e0f;
+                font-weight:arial ;
+              }
+              .navbar ul li a:hover{
+                border-bottom: 2px solid #80BCBD;
+              }
+              /* الخلفية  */
+              header{
+                
+                background:url('../img/pn.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+               background-position:center; 
+              }
+               header{
+                height: 100vh;
+                
+              }
+              /* خلفية وتضليل الصورة */
+              header::before{
+                content: "";
+                position: absolute;
+                top:0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.253);
+              }
+              /* درجة وضوح الكلام */
+              header * {
+                z-index: 5;
+              } 
+            /* تغيير اتجاه المربع كامل  */
+             /* .box {
+              flex-direction: ;
+            
+            }  */
+           /*add full-width input fields*/
+          
+           input[type=text]{
+               width: 100%;
+               padding: 12px 20px;
+               margin: 8px 0;
+               display: inline-block;
+               border: 2px solid #ccc;
+               box-sizing: border-box;
+           }
+           input[type=checkbox]{
+            width: 10%;
+            margin: 10px 0;
+            display: inline-block;
+        }
+        select{
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 2px solid #ccc;
+          box-sizing: border-box;
+          font-size:15px ;
+        }
+        
+           /* set a style for the main container */
+           .main-container {
+               direction: rtl;
+               padding-right: 15px;
+               padding-left: 15px;
+               margin-right: auto;
+               margin-left: auto;
+               max-width: 500px;
+           }
+         
+         
+           /* set a style for all buttons*/
+          
+           button {
+               /* background-color: rgb(168, 255, 168); */
+               background-color: #fff3cf;
+               color:black ;
+               padding: 15px 20px;
+               margin: 8px 0;
+               cursor: pointer;
+               width: 100%;
+               font-size: medium;
+           }
+           /*set styles for the cancel button*/
+          
+           .cancelbtn {
+               padding: 15px 20px;
+               /* background-color: #637a9f; */
+               background-color:#80BCBD ;
+           }
+           /*float cancel and signup buttons and add an equal width*/
+          
+           .cancelbtn,
+           .signupbtn {
+               float: left;
+               width: 50%;
+           }
+           /*add padding to container elements*/
+          
+           .container {
+               padding: 16px;}
+           /*clear floats*/
+          
+           .clearfix::after {
+               content: "";
+               clear: both;
+               display: table;
+           }
+           /*styles for cancel button and signup button
+           on extra small screens*/
+          
+          
+          
+            .box{
+               
+                width: 600px;
+                height: 500px;
+                background: #c9d7dd5e;
+                backdrop-filter: blur(20px);
+                border-radius: 30px;
+                padding: 20px;
+                padding-top: 30px;
+                margin: 20px;
+                direction: ltr;
+               position: relative;}
+        
+        
+               @media screen and (max-width: 400px) {
+                .main-container {
+                    width: 100%;
+                }
+              }
+            
